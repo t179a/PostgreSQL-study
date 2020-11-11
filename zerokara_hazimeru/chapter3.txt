@@ -1,0 +1,9 @@
+1.
+
+2.
+  select shohin_bunri, sum(hanbai_tanka), sum(shiire_tanka) from shohin group by shohin_bunri having sum(hanbai_tanka) >= sum(shiire_tanka) * 1.5;
+  
+3.
+  select * from shohin order by date desc, hanbai_tanka;
+
+
