@@ -1,0 +1,4 @@
+1.
+
+2.
+  select coalesce(ts.tenpo_id, '不明') as tenpo_id, coalesce(ts.tenpo_mei, '不明') as tenpo_mei, s.shohin_id, s.shohin_mei, s.hanbai_tanka from tenposhohin as ts right outer join shohin as s on ts.shohin_id = s.shohin_id;
